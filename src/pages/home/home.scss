@@ -1,12 +1,14 @@
 .home {
   .features {
     background-color: #f1fdf7;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     padding: 100px 0px;
 
     &.dark {
       background-color: #0d084d;
+      font-family: 'Roboto', sans-serif;
       
 
       h1 {
