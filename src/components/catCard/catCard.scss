@@ -11,17 +11,40 @@
     height: 100%;
     object-fit: cover;
   }
-  .desc {
-    font-weight: 300;
+  .logos {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Use RGBA to add transparency to the black background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+   
+    &:hover {
+      opacity: 1;
+    }
+    .desc {
+      font-weight: 300;
+      font-size: 16px; /* Adjust the font size as needed */
+      margin-bottom: 5px;
+    }
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      // position: absolute;
+      // left: 15px;
+      // top: 40px;
+    }
+    span {
+      color: white;
+    }
   }
-  .title {
-    font-weight: 500;
-    font-size: 24px;
-    position: absolute;
-    left: 15px;
-    top: 40px;
-  }
+ 
 }
